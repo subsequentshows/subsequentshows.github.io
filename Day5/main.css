@@ -42,22 +42,7 @@ span {
     width: 25%;
     height: 100%;
 }
-.left-one {
-    margin-right: 10px;
-    display: block;
-    position: relative;
-}
-.middle-one {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.middle-two {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.right-one{
-    margin-left: 10px;
-}
+
 .image {
     opacity: 1;
     display: block;
@@ -75,7 +60,10 @@ span {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-
+.hover-all {
+    display: block;
+    position: relative;
+}
 .hover-all:hover .image {
     opacity: 0.3;
 }
