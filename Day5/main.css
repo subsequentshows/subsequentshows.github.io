@@ -8,10 +8,13 @@ body {
     font-size: 25px;
     padding: 20px 5px 0px 0px;
 }
+.main-top{
+    text-align: center;
+}
 .logo-container {
     position: relative;
     text-align: center;
-    color: white;
+    color:rgb(243, 237, 237);
 }
 .logo-brand {
     position: absolute;
@@ -21,51 +24,28 @@ body {
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 2.3px;
-    background-color: rgb(88, 85, 85);
-    padding: 5px 10px 5px 10px;
+
 }
 span {
     margin-right: 100px;
 }
-#content {
-    position: relative;
+.container {
     width: 100%;
     height: 1000px;
     margin: 0%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
 }
-.left-one:hover .overlay {
-    width: 10%;
-}
-.product-text{
-    text-align: center;
-    font-size: 17px;
-    letter-spacing: 1.4px;
-}
-.main-top{
-    text-align: center;
-}
-size-divide-4{
-    width: 33.333%;
+.size-divide-4 {
+    width: 25%;
     height: 100%;
-}
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(88, 85, 85);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
 }
 .left-one {
     margin-right: 10px;
     display: block;
+    position: relative;
 }
 .middle-one {
     margin-right: 10px;
@@ -78,7 +58,41 @@ size-divide-4{
 .right-one{
     margin-left: 10px;
 }
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
+.hover-all:hover .image {
+    opacity: 0.3;
+}
+.hover-all:hover .overlay {
+    opacity: 1;
+}
+.text {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 16px 32px;
+}
+.product-text{
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1.4px;
+}
 .footer1 {
     background: gray;
     text-align: right;
