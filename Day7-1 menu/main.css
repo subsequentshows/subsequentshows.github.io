@@ -1,0 +1,103 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    color: #464646;
+    background-color: #f4f7fa;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#header {
+    background-color: #34465c;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar {
+    justify-content: space-between !important;
+    border: none !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-brand img {
+    width: 120px;
+    margin-left: 20px;
+}
+
+.menu {
+    color: white;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.menu ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li {
+    display: inline;
+    line-height: 30px;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* xoa gach ngang */
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 20px 20px 0;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: red;
+}
+
+.menu ul li>.sub-menu {
+    display: none;
+    position: absolute;
+}
+
+
+/* an sub menu */
+
+.menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    background-color: transparent;
+    width: 100px;
+    padding-top: 5px;
+}
+
+.sub-menu li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    width: 100%;
+    background-color: wheat;
+}
