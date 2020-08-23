@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+._n9 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    background-color: gray;
+}
+
+._n3 {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+._3qw {
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    table-layout: fixed;
+    display: table;
+    height: 100% !important;
+    min-height: 100%;
+    width: 100%;
+    z-index: 400;
+}
+
+
+._8ien {
+    width: 400px;
+}
+
+
+
+._3qw ._52lp {
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    padding: 2px 0px;
+    
+    position: relative;
+    width: 400px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+._8fgl {
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #dadde1;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+    width: 400px;
+}
+
+._58mh {
+    width: 400px;
+}
+
+.ho-cha {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+.ho {
+    position: relative;
+    float: left;
+    width: 190px;
+}
+
+.ten-cha {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+.ten {
+    position: relative;
+    float: right;
+    width: 190px;
+}
+
+.sdt {
+    border-radius: 5px;
+    width: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+.form-text {
+    font-size: 17px;
+    padding: 10px 16px;
+    width: 360px;
+}
+
+.form-text-1 {
+    font-size: 17px;
+    padding: 10px 18px;
+    width: 140px;
+}
+
+.register {
+    align-self: center;
+}
