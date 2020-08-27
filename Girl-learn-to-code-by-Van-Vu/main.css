@@ -13,11 +13,11 @@ body {
     background-color: whitesmoke;
 }
 
-.banner {
-    vertical-align: middle;
+.banner-image {
     width: 1140px;
     max-width: 100%;
     height: auto;
+    
 }
 
 a {
@@ -78,10 +78,7 @@ a {
     text-align: center;
 }
 
-.banner-image {
-    height: auto;
-    width: 1110px;
-}
+
 
 .product-image {
     height: 450px;
