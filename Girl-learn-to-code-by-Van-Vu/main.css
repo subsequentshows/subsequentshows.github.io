@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,600&display=swap");
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    background-color: whitesmoke;
+}
+
+.banner {
+    vertical-align: middle;
+    width: 1140px;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .products {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+} */
+
+
+/* Header */
+
+.header {
+    padding: 30px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+}
+
+.menu-items:not(:nth-child(4)) {
+    margin-left: 30px;
+}
+
+.menu-links {
+    font-size: 18px;
+}
+
+
+/* Products List */
+.section-product {
+    width: 95%;
+}
+
+.section-header {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.banner-image {
+    height: auto;
+    width: 1110px;
+}
+
+.product-image {
+    height: 450px;
+    width: 100%;
+}
+
+.products-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -15px;
+}
+
+.products-wrapper {
+    flex: 0 33.3333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.products {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.products:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* About */
+
+.about {
+    padding: 30px 0;
+}
+
+.info-list {
+    padding: 0 30px;
+}
+
+.description,
+.info-items {
+    line-height: 1.8;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+}
