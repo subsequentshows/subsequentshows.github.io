@@ -144,3 +144,78 @@ a {
     padding: 30px 0;
     text-align: center;
 }
+
+/* Contact page */
+.contact-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 58.5%;
+    overflow: hidden;
+    padding: 250px 0px 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.section-padding {
+    padding-top: 50px;
+}
+
+.contact-container {
+    width: 1170px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-content: space-between;
+    padding: 0 15px 0px 30px;
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 16px;
+    width: 50%;
+    float: left;
+}
+
+.line {
+    padding-top: 20px;
+}
+
+.contact-form {
+    font-weight: 500;
+    font-size: 15px;
+    width: 50%;
+    float: left;
+    text-align: left;
+
+}
+
+.address-text {
+    padding-bottom: 30px;
+}
+
+.form-group {
+    padding: 5px 0 10px 10px;
+}
+
+.input {
+    padding: 10px 0 10px 10px;
+    width: 400px;
+    font-size: 16px;
+}
+
+.button {
+    width: 135px;
+    height: 45px;
+    border-radius: 3px;
+    border: 0px solid;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+    background: #37b721;
+    font-weight: 500;
+}
