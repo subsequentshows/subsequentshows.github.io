@@ -119,10 +119,8 @@ body {
 }
 
 .image {
-    opacity: 1;
-    display: block;
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: 350px;
     transition: all 0.25s linear;
     backface-visibility: hidden;
 }
@@ -138,21 +136,14 @@ body {
 
 .image:hover {
     transform: translate(-5px, -5px);
-    box-shadow: 3px 1px 5px 5px gray;
-}
-
-.logo-brand:hover {
-    color: gray;
+    box-shadow: 1px 1px 2px 1px gray;
 }
 
 .location-text {
     text-align: center;
     font-size: 18px;
+    font-weight: 500;
     padding-top: 10px;
-}
-
-a:hover {
-    color: blue;
 }
 
 div p a {
@@ -160,28 +151,8 @@ div p a {
     color: black;
 }
 
-
-/*
-.container-2 {
-    height: auto;
-    width: 80%;
-    display: flex;
-    margin: 0%;
-     flex-direction: row; 
-        
-        flex-wrap: wrap;
-        
-    justify-content: flex-start;
-    margin-left: 30px;
-}
-*/
-
 .mySlides {
-    display: none
-}
-
-.img-2 {
-    vertical-align: middle;
+    display: none;
 }
 
 
@@ -192,6 +163,9 @@ div p a {
     position: relative;
     margin: auto;
     padding-top: 40px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -276,14 +250,18 @@ div p a {
     }
 }
 
-.location-text-2 {
-    text-align: left;
-    margin-left: 40px;
+.detail-image {
+    width: 1000px;
+    height: 550px;
 }
 
 .text {
-    font-size: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    /* width: 1200px; */
     text-align: left;
+    margin-top: 20px;
 }
 
 .places {
@@ -300,4 +278,10 @@ div p a {
 h2 {
     padding-top: 20px;
     font-size: 18px;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
 }

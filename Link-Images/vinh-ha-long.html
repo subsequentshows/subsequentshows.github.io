@@ -33,31 +33,34 @@
         <div class="body-part">
             <div class="body-content main-container">
                 <div class="row main-post">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/vinh-ha-long-2.jpg" style="width:500px; height: 400px;">
-                        </div>
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div></div>
+                                <img class="detail-image" src="./images/vinh-ha-long-2.jpg">
+                            </div>
 
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/vinh-ha-long-3.jpg" style="width:500px; height: 400px;">
-                        </div>
+                            <div class="mySlides fade">
+                                <div></div>
+                                <img class="detail-image" src="./images/vinh-ha-long-3.jpg">
+                            </div>
 
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/vinh-ha-long-4.jpg" style="width:500px; height: 400px;">
+                            <div class="mySlides fade">
+                                <div></div>
+                                <img class="detail-image" src="./images/vinh-ha-long-4.jpg">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
                     </div>
-                    <br>
 
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                    <div class="location-text-2">
-                        <h1 class="text">GIỚI THIỆU VỀ VỊNH HẠ LONG</h1>
+                    <div class="text">
+                        <h1 style="font-size: 20px;">GIỚI THIỆU VỀ VỊNH HẠ LONG</h1>
                         <p>Vịnh Hạ Long – được Unesco nhiều lần công nhận là di sản thiên nhiên của thế giới với hàng nghìn hòn đảo được làm nên bởi tạo hoá kỳ vĩ và sống động. Vịnh Hạ Long có phong cảnh tuyệt đẹp nên nơi đây là một điểm du lịch rất hấp
                             dẫn với du khách trong nước và quốc tế. Vịnh Hạ Long là một di sản độc đáo bởi địa danh này chứa đựng những dấu tích quan trọng trong quá trình hình thành và phát triển lịch sử trái đất, là cái nôi cư trú của người Việt cổ,
                             đồng thời là tác phẩm nghệ thuật tạo hình vĩ đại của thiên nhiên với sự hiện diện của hàng nghìn đảo đá muôn hình vạn trạng, với nhiều hang động kỳ thú quần tụ thành một thế giới vừa sinh động vừa huyền bí. Bên cạnh đó, vịnh
@@ -95,15 +98,17 @@
                             </ul>
                         </p>
                     </div>
-                    <div class="back-button">
-
-                        <button onclick="goBack()">Go Back To Homepage</button>
-                    </div>
                 </div>
 
+                <div class="back-button">
 
+                    <button onclick="goBack()">Go Back To Homepage</button>
+                </div>
             </div>
+
+
         </div>
+    </div>
 </body>
 <script>
     var slideIndex = 1;

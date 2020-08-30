@@ -33,31 +33,31 @@
         <div class="body-part">
             <div class="body-content main-container">
                 <div class="row main-post">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/sapa-5.jpg" style="width:500px; height: 400px;">
-                        </div>
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img class="detail-image" src="./images/sapa-5.jpg">
+                            </div>
 
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/sapa-4.jpg" style="width:500px; height: 400px;">
-                        </div>
+                            <div class="mySlides fade">
+                                <img class="detail-image" src="./images/sapa-4.jpg">
+                            </div>
 
-                        <div class="mySlides fade">
-                            <div></div>
-                            <img src="./images/sapa-3.jpg" style="width:500px; height: 400px;">
+                            <div class="mySlides fade">
+                                <img class="detail-image" src="./images/sapa-3.jpg">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
                     </div>
-                    <br>
 
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                    <div class="location-text-2">
-                        <h1 class="text">GIỚI THIỆU VỀ SAPA</h1>
+                    <div class="text">
+                        <h1 style="font-size: 20px;">GIỚI THIỆU VỀ SAPA</h1>
                         <p>Sapa thuộc tỉnh Lào Cai, là một trong những tỉnh miền núi nằm giữa hai dãy núi Hoàng Liên Sơn và dãy Con Voi hướng Tây Bắc vì vậy địa hình ở Lào Cai được phân tầng, càng lên cao nhiệt độ càng giảm. Bởi vậy, khí hậu ở Sapa khá đặc
                             biệt, trong một ngày du khách đi tour Sapa sẽ được tận hưởng của 4 mùa xuân, hạ, thu, đông. Bên cạnh đó vào mỗi mùa trong năm khung cảnh Sapa lại khoác trên mình một nét riêng, đem đến cho du khách những trải nghiệm khó quên
                             khi ghé thăm miền Tây Bắc. Dưới đây là một số thời điểm đặc biệt nhất bạn có thể tham khảo để lên lịch trình cho chuyến du lịch Sapa nhé.</p>
@@ -90,15 +90,16 @@
                                     </ul>
                                 </p>
                     </div>
-                    <div class="back-button">
-
-                        <button onclick="goBack()">Go Back To Homepage</button>
-                    </div>
                 </div>
 
-
+                <div class="back-button">
+                    <button onclick="goBack()">Go Back To Homepage</button>
+                </div>
             </div>
+
+
         </div>
+    </div>
 </body>
 <script>
     var slideIndex = 1;
