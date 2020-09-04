@@ -47,7 +47,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
     color: white;
     height: 60px;
     width: 80%;
