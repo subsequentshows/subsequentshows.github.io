@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html onclick="jump();">
+
+<head>
+    <title>Dino Game</title>
+    <style>
+        #game {
+            border: 1px black;
+            background-color: lightgrey;
+            height: 200px;
+            width: 500px;
+        }
+
+        #player {
+            position: relative;
+            top: 150px;
+        }
+
+        #obstacle {
+            position: relative;
+            top: 125px;
+            left: 475px;
+            animation: none;
+        }
+
+        @keyframes jump {
+            0% {
+                top: 150px;
+            }
+
+            50% {
+                top: 75px;
+            }
+
+            100% {
+                top: 150px;
+            }
+        }
+
+
+
+        @keyframes block {
+            0% {
+                left: 475px;
+            }
+
+            100% {
+                left: -25px;
+            }
+        }
+
+        .game-container {
+            width: 100%;
+
+        }
+
+        #highScore {
+            position: absolute;
+            margin-left: 50px;
+        }
+
+        #score {
+            position: absolute;
+            margin-left: 390px;
+        }
+
+        .game-score {
+            display: flex;
+        }
+
+        #restart {
+            width: 100px;
+            height: 40px;
+            margin-bottom: 20px;
+            outline: none;
+
+        }
+
+        #resetScore {
+            width: 100px;
+            height: 40px;
+            outline: none;
+
+        }
+
+        .game-prop {
+            left: 600px;
+            position: absolute;
+            height: 200px;
+        }
+
+        #muteButton {
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        #muteButton:active {
+            background-color: #FFF;
+            /* box-shadow: 0 5px #666; */
+            transform: translateY(4px);
+        }
+
+        button:active {
+            /* background-color: #3e8e41;
+            box-shadow: 0 5px #666; */
+            transform: translateY(4px);
+            cursor: pointer;
+            outline: none;
+        }
+
+        .game-background {
+            position: absolute;
+            height: 230px;
+            width: 500px;
+        }
+
+        .player {
+            width: 35px;
+            height: 50px;
+        }
+
+        .enemy {
+            width: 25px;
+            height: 25px;
+        }
+
+        body {
+            background:  rgb(197, 187, 187) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <div id="game">
+            <div>
+                <img class="game-background" src="./images/ZGjIz9X.jpg">
+            </div>
+            <b class="game-score">
+                <p id="highScore">Highscore: 0</p>
+                <p id="score">Score: 0</p>
+            </b>
+
+            <div id="player" style='animation: "none";'>
+                <img class="player" src="./images/dino2.1.png">
+            </div>
+            
+            <div id="obstacle">
+                <img class="enemy" src="./images/enemy3.png">
+            </div>
+
+            <div class="game-prop">
+                <div>
+                    <button onclick="restart()" id="restart">Restart</button><br>
+                    <button onclick="deleteData();" id="resetScore">Reset Highscores</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            document.getElementById("highScore").innerHTML = "Highscore: " + localStorage.highScore;
+            document.addEventListener("click", jump);
+
+            let score = 0;
+            let up = 1;
+            let ded = "yes";
+
+            setInterval(checkPlayer, 10);
+
+            var player = document.getElementById("player");
+            var obstacle = document.getElementById("obstacle");
+            function jump() {
+                if (player.style.animation != "500ms ease 0s 1 normal none running jump") {
+                    var jump = new Audio("./sounds/jump.wav");
+                    jump.play();
+                    player.style.animation = "jump 500ms";
+                    setTimeout(remove, 500);
+                }
+            }
+
+            function remove() {
+                player.style.animation = "none";
+            }
+
+            function checkPlayer() {
+                var characterTop = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
+                var blockLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
+
+                if (blockLeft < 25 && blockLeft > 0 && characterTop > 125) {
+                    dead();
+                }
+
+                else {
+                    if (ded == "no") {
+                        score++;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        if (score > 500 && score < 1000) {
+                            obstacle.style.animation = "none";
+                            document.getElementById("obstacle").style.animation = "block 850ms infinite linear";
+                            if (up == 1) {
+                                up++;
+                                var level = new Audio("./sounds/levelUp.wav");
+                                level.play()
+                            }
+                        }
+
+                        if (score > 2000 && score < 4999) {
+                            if (up == 2) {
+                                up++;
+
+                                var level = new Audio("./sounds/levelUp.wav");
+                                level.play()
+
+                                obstacle.style.animation = "none";
+                                document.getElementById("obstacle").style.animation = "block 750ms infinite linear";
+                            }
+                        }
+
+                        if (score < 5000) {
+                            if (up == 3) {
+                                up++;
+                                var level = new Audio("./sounds/levelUp.wav");
+                                level.play()
+                                obstacle.style.animation = "none";
+                                document.getElementById("obstacle").style.animation = "block 600ms infinite linear";
+                            }
+                        }
+                    }
+                }
+            }
+
+            function dead() {
+                var death = new Audio("./sounds/death.wav");
+                death.play()
+
+
+                document.getElementById("obstacle").style.animation = "p";
+                document.getElementById("score").innerHTML = "Score: " + score;
+                ded = "yes";
+
+                document.getElementById("restart").style.display = "block";
+                obstacle.style.display = "none";
+                document.getElementById("resetScore").style.display = "block";
+
+                if (localStorage.highScore) {
+                    if (score > localStorage.highScore) {
+                        localStorage.highScore = score;
+                    }
+                } else {
+                    localStorage.setItem("highScore", score);
+                }
+                document.getElementById("highScore").innerHTML = "Highscore: " + localStorage.highScore;
+
+            }
+
+            function restart() {
+                up = 1;
+                score = 0;
+                ded = "no";
+                document.getElementById("obstacle").style.animation = "block 1s infinite linear";
+                document.getElementById("restart").style.display = "none";
+                obstacle.style.display = "block";
+                document.getElementById("resetScore").style.display = "none";
+
+            }
+
+            function deleteData() {
+                var confirmDelete = confirm("Your data will be lost forever! \nConfirm?");
+                if (confirmDelete == true) {
+                    localStorage.removeItem("highScore");
+                    highScore= 0;
+                }
+                document.getElementById("highScore").innerHTML = "Highscore: " + highScore;
+            }
+        </script>
+</body>
+
+</html>
