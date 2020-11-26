@@ -176,8 +176,8 @@
         <div class="nav-phone">
             <div class="logo"></div>
 
-            <button class="toggle-menu" onclick="toggleFunc()">
-                <img style="height: 40px;" src="./images/menu.png">
+            <button class="toggle-menu" onclick="toggleMenu()">
+                <img style="height: 40px;" src="./images/menu.png" alt="image">
             </button>
         </div>
 
@@ -193,7 +193,7 @@
 
     <div class="main-content"></div>
     <script>
-        function toggleFunc() {
+        function toggleMenu() {
             let x = document.querySelector(".menu");
             if (x.style.display == "none") {
                 x.style.display = "flex";
