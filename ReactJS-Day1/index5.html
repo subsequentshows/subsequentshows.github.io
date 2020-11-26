@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: calc(100% - 40px);
+            background-color: greenyellow;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .nav-bar {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                background-color: gray;
+            }
+
+            .nav-phone {
+                margin-top: 5px;
+                margin-top: 5px;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .logo {
+                width: 15%;
+                height: 100%;
+            }
+
+            .toggle-menu {
+                height: 100%;
+                /* width: 10%; */
+                margin-right: 20px;
+                outline: none;
+            }
+
+            .menu {
+                display: flex;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 100px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: calc(100% - 40px);
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .menu ul {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .menu ul li {
+                height: calc(100% / 4);
+                list-style: none;
+            }
+
+            .menu ul li button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                width: 100%;
+                background-color: transparent;
+                height: 100%;
+                outline: none;
+            }
+
+            .menu ul li button a {
+                color: white;
+                text-decoration: none;
+            }
+
+        }
+
+        @media only screen and (min-width: 601px) {
+            .nav-bar {
+                width: 100%;
+                align-items: center;
+                height: 60px;
+                background-color: gray;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav-phone {
+                max-width: 8%;
+                width: 50px;
+                height: 40px;
+                margin-left: 20px;
+                /* margin-top: 10px; */
+                background-color: rgb(241, 195, 203);
+            }
+
+            .menu {
+                width: 92%;
+                /* padding-left: 20px; */
+                height: 40px;
+                margin-right: 20px;
+            }
+
+            .menu ul {
+                display: flex;
+                list-style: none;
+                height: 100%;
+                width: 100%;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .menu ul li {
+                /* margin-left: 20px; */
+                height: 100%;
+
+            }
+
+            .menu ul li button {
+                height: 100%;
+                max-width: 100%;
+                width: 150px;
+                outline: none;
+                cursor: pointer;
+                background-color: rgb(79, 209, 79);
+                color: white;
+                font-size: 20px;
+                border-right: none;
+            }
+
+            .menu ul li button a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .toggle-menu {
+                display: none;
+            }
+
+            .menu ul li:nth-child(1) {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+
+                letter-spacing: 1.2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-phone">
+            <div class="logo"></div>
+
+            <button class="toggle-menu" onclick="toggleFunc()">
+                <img style="height: 40px;" src="./images/menu.png">
+            </button>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><button><a href="#">Main Page</a></button></li>
+                <li><button><a href="#">Menu 1</a></button></li>
+                <li><button><a href="#">Menu 2</a></button></li>
+                <li><button><a href="#">Menu 3</a></button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content"></div>
+    <script>
+        function toggleFunc() {
+            let x = document.querySelector(".menu");
+            if (x.style.display == "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
