@@ -1,0 +1,132 @@
+.link-stuff {
+    padding-top: 1px;
+}
+
+.link-stuff:hover {
+    text-decoration: none;
+}
+
+.default-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30pt !important;
+    letter-spacing: 4.2px;
+    color: #000000;
+}
+
+.blog-info {
+    font-size: 11pt;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.blog-title {
+    font-size: 23pt;
+    color: #626262;
+}
+
+.blog-text {
+    font-size: 14pt;
+    color: #626262
+}
+
+.menu-custom {
+    font-size: 14pt;
+    color: #626262;
+}
+
+.banner-custom {
+    margin-top: 77px;
+}
+
+.spacing {
+    padding-bottom: 135px;
+}
+
+.card-custom {
+    width: 100%;
+    height: auto;
+}
+
+.sign-up {
+    height: 290px;
+    background-color: #f0f0f0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.signup-title {
+    font-size: 30pt;
+    text-align: center;
+    color: #333333;
+}
+
+.form-container {
+    border-bottom: 1px solid black;
+}
+
+.form-custom {
+    width: 530px;
+    border: none;
+    background: transparent;
+    color: #626262;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.form-send-btn {
+    outline: none;
+    border: none;
+}
+
+.form-send-btn:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.loadmore-custom {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    height: 100px;
+}
+
+.footer-small {
+    max-width: 1062px;
+    width: 77%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .signup-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .form-container {
+        width: 80%;
+    }
+    .form-custom {
+        width: 100%;
+    }
+    .padding-small {
+        padding-top: 100px;
+    }
+    .footer-small {
+        width: 90%;
+        margin: auto;
+    }
+}
