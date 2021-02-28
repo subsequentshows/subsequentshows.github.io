@@ -17,8 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="info.css">
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="./css/info.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- Playfair Display -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +55,7 @@
 </head>
 
 <body class="default-font">
-  <div class="custom-width nav-grand">
+  <div class="custom-width">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark logo-custom default-font custom-width pt-0 pb-0">
       <div class="container-xl container-fluid pl-lg-0 pr-lg-0">
         <div class="input-group">
@@ -64,11 +65,11 @@
             </button>
 
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Russian </a>
+              <a class="dropdown-item" href="#">Poland</a>
+              <a class="dropdown-item" href="#">Spanish</a>
               <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#">Vietnamese</a>
             </div>
           </div>
         </div>
@@ -76,13 +77,6 @@
         <a class="navbar-brand navbar-brand-custom " href="index.html">TIMELESS TASTES</a>
 
         <div class="row">
-          <!-- <form class="d-flex">
-          <input class="form-control me-2 " type="search" placeholder="" aria-label="Search" style="background-color: transparent;">
-          <button class="btn" type="submit">
-          <i class="fas fa-search"></i>
-          </button>
-          </form> -->
-
           <button class="btn button-custom" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-shopping-cart"></i>
           </button>
@@ -143,7 +137,7 @@
 
   <div class="container-xl container-fluid  info-container  h-auto">
     <div class="row h-100">
-      <div class="imglist imglist-custom">
+      <!-- <div class="imglist imglist-custom">
         <div class="d-flex justify-content-center">
           <a data-fancybox-trigger="preview" href="javascript:;">
             <img class="w-100 pb-3 imglist-imgcustom" src="./images/p2.jpg" />
@@ -165,84 +159,140 @@
         <a href="https://source.unsplash.com/X9GHkHbJIaU/1500x1000" data-fancybox="preview" data-width="1500" data-height="1000">
           <img src="https://source.unsplash.com/X9GHkHbJIaU/120x80" />
         </a>
-      </div>
+      </div> -->
       <!-- END OF PRODUCT IMAGE -->
 
-      <!-- START OF PRODUCT INFO -->
-      <div class="col-lg-6 col-md-6 col-sm-6 col-12 h-100">
-        <div class="container-fluid">
-          <div class="pl-3">
-            <p class="product-name pt-3">ICONIC LINK 1</p>
-            <p class="product-price">$199.99</p>
+      <!--Section: Block Content-->
+      <section class="mb-5">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
 
-            <form>
-              <fieldset class="form-group">
-                <div class="row">
-                  <legend class="col-form-label col-sm-2 pt-0 pr-lg-0">Color</legend>
-                  <div class="col-sm-10 pl-lg-0">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">Black
-                        </label>
+            <div id="mdb-lightbox-ui"></div>
+
+            <div class="mdb-lightbox">
+
+              <div class="row product-gallery  mx-1">
+
+                <div class="col-12 mb-0 product-gallery-image-custom">
+                  <figure class="view overlay rounded z-depth-1 main-img">
+                    <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" data-size="710x823">
+                      <img src="" class=" img-fluid z-depth-1">
+                    </a>
+                  </figure>
+                  <figure class="view overlay rounded z-depth-1" style="visibility: hidden;">
+                    <a href="" data-size="710x823">
+                      <img src="x" class="img-fluid z-depth-1">
+                    </a>
+                  </figure>
+                  <figure class="view overlay rounded z-depth-1" style="visibility: hidden;">
+                    <a href="" data-size="710x823">
+                      <img src="" class="img-fluid z-depth-1">
+                    </a>
+                  </figure>
+                  <figure class="view overlay rounded z-depth-1" style="visibility: hidden;">
+                    <a href="" data-size="710x823">
+                      <img src="" class="img-fluid z-depth-1">
+                    </a>
+                  </figure>
+                </div>
+
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="view overlay rounded z-depth-1 gallery-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" class="img-fluid">
+                        <div class="mask rgba-white-slight"></div>
+                      </div>
                     </div>
-
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">Red
-                        </label>
+                    <div class="col-3">
+                      <div class="view overlay rounded z-depth-1 gallery-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" class="img-fluid">
+                        <div class="mask rgba-white-slight"></div>
+                      </div>
                     </div>
-
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                      <label class="form-check-label" for="gridRadios3">Blue
-                        </label>
+                    <div class="col-3">
+                      <div class="view overlay rounded z-depth-1 gallery-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg" class="img-fluid">
+                        <div class="mask rgba-white-slight"></div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="view overlay rounded z-depth-1 gallery-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" class="img-fluid">
+                        <div class="mask rgba-white-slight"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </fieldset>
-            </form>
+              </div>
 
+            </div>
 
-            <form>
-              <fieldset class="form-group">
-                <div class="row">
-                  <legend class="col-form-label col-sm-2 pt-0 pr-lg-0">Size</legend>
-                  <div class="col-sm-10 pl-lg-0">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" checked>
-                      <label class="form-check-label" for="gridRadios4">
-                      18mm
-                    </label>
-                    </div>
-
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
-                      <label class="form-check-label" for="gridRadios5">
-                      20mm
-                    </label>
-                    </div>
-
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
-                      <label class="form-check-label" for="gridRadios6">
-                      22mm
-                    </label>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
           </div>
-
-          <div class="container-fluid p-0">
-            <button type="button" class="btn add-btn w-100">ADD TO CART</button>
+          <div class="col-md-6">
+            <p class="mb-2 text-muted text-uppercase small">Watch</p>
+            
+            <p><span class="mr-1"><strong>$12.99</strong></span></p>
+            <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos sapiente tempore alias.</p>
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless mb-0">
+                <tbody>
+                  <tr>
+                    <th class="pl-0 w-25" scope="row"><strong>Model</strong></th>
+                    <td>5407X</td>
+                  </tr>
+                 
+                  <tr>
+                    <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
+                    <td>USA, Europe</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div class="table-responsive mb-2">
+              <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td class="pl-0 pb-0 w-25">Quantity</td>
+                    <td class="pb-0">Select size</td>
+                  </tr>
+                  <tr>
+                    <td class="pl-0">
+                      <div class="def-number-input number-input safari_only mb-0">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="mt-1">
+                        <div class="form-check form-check-inline pl-0">
+                          <input type="radio" class="form-check-input" id="small" name="materialExampleRadios" checked>
+                          <label class="form-check-label small text-uppercase card-link-secondary" for="small">Small</label>
+                        </div>
+                        <div class="form-check form-check-inline pl-0">
+                          <input type="radio" class="form-check-input" id="medium" name="materialExampleRadios">
+                          <label class="form-check-label small text-uppercase card-link-secondary" for="medium">Medium</label>
+                        </div>
+                        <div class="form-check form-check-inline pl-0">
+                          <input type="radio" class="form-check-input" id="large" name="materialExampleRadios">
+                          <label class="form-check-label small text-uppercase card-link-secondary" for="large">Large</label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
+            <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
+          class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
           </div>
-
-
-
         </div>
-      </div>
-      <!-- END OF PRODUCT INFO -->
+
+      </section>
+      <!--Section: Block Content-->
     </div>
   </div>
   <!-- END OF PRODUCT PRICE -->
@@ -320,61 +370,7 @@
 
   <div class="container-fluid text-center mb-3 best-selling">OTHER STYLE</div>
 
-  <div class="container-xl container-fluid p-0">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-      <div class="col card-container mb-4">
-        <div class="card h-100 card-custom">
-          <a href="info.html">
-            <div class="img-overlay-2"></div>
-            <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CLASSIC CORNWALL A</h5>
-              <p class="card-text">$199.99</p>
-            </div>
-          </a>
-        </div>
-      </div>
 
-      <div class="col card-container mb-4">
-        <div class="card h-100 card-custom">
-          <a href="info.html">
-            <div class="img-overlay-2"></div>
-            <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CLASSIC CORNWALL</h5>
-              <p class="card-text">$199.99</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col card-container mb-4">
-        <div class="card h-100 card-custom">
-          <a href="info.html">
-            <div class="img-overlay-2"></div>
-            <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CLASSIC CORNWALL</h5>
-              <p class="card-text">$199.99</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col card-container mb-4">
-        <div class="card h-100 card-custom">
-          <a href="info.html">
-            <div class="img-overlay-2"></div>
-            <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CLASSIC CORNWALL</h5>
-              <p class="card-text">$199.99</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -458,11 +454,14 @@
   </div>
   <!-- Not end of footer -->
 
-  <script>
+  <!-- <script>
     $('[data-fancybox="preview"]').fancybox({
       thumbs: {
         autoStart: true
       }
     });
+  </script> -->
+  <script>
+
   </script>
 </body>
