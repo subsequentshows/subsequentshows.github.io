@@ -9,8 +9,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./images/letter-t-.png">
-  <!---->
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./css/watch.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- Link Font Awesome -->
   <link rel="stylesheet" href="./css/all.min.css">
@@ -55,11 +56,11 @@
             </button>
 
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Russian </a>
+              <a class="dropdown-item" href="#">Poland</a>
+              <a class="dropdown-item" href="#">Spanish</a>
               <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#">Vietnamese</a>
             </div>
           </div>
         </div>
@@ -68,7 +69,9 @@
 
         <div class="row">
           <button class="btn button-custom" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="./checkout.html">
             <i class="fas fa-shopping-cart"></i>
+          </a>
           </button>
         </div>
       </div>
@@ -134,7 +137,7 @@
     </nav>
 
     <div class="container banner mw-100 pl-0 pr-0">
-      <img class="img-responsive d-block w-100 img-fluid " src="./images/1.jfif" alt="banner">
+      <img class="d-block w-100 img-fluid " src="./images/1.jfif" alt="banner">
     </div>
   </div>
 
@@ -157,9 +160,187 @@
       </div>
     </div>
 
+    <button id="modalActivate" type="button" class="btn btn-custom pl-3 pr-3" data-toggle="modal" data-target="#exampleModalPreview">Filter</button>
 
-    <button type="button" class="btn btn-custom pl-3 pr-3">Filter</button>
+    <!-- Modal -->
+    <div class="modal fade right p-0" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+      <div class="modal-dialog-full-width modal-dialog momodel modal-fluid h-100 p-0" role="document">
+        <div class="modal-content-full-width modal-content h-auto">
+          <div class=" modal-header-full-width modal-header d-flex justify-content-lg-center">
+            <h5 class="modal-title w-100 text-center" id="exampleModalPreviewLabel">FILTER</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+            </button>
+          </div>  
+
+          <div class="modal-body modal-body-custom pl-0 pt-0 pr-0">
+            <div class="accordion accordion-container" id="accordionExample">
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingOne">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Type
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingOne">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Size
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingThree">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                      Colour
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingFour">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Material
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingFive">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Strap Color
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card  accordion-custom">
+                <div class="card-header" id="headingSix">
+                  <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button"  data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Collections
+                      <img src="./images/down-arrow.png">
+                  </button>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter accordion -->
+          </div>
+
+          <div class="modal-footer-full-width modal-footer d-flex justify-content-around modal-footer-custom">
+            <button type="button" class="btn btn-secondary btn-custom-2">Remove All
+
+            <button type="button" class="btn btn-custom btn-custom-2">Apply
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  
 
   <div class="container-xl container-fluid">
     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
@@ -477,17 +658,7 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
+  
   <!-- This is not footer -->
   <div class="container-fluid  footer mt-5">
     <div class="row footer-inner container-xl container-fluid h-100 ml-auto mr-auto pt-5">
