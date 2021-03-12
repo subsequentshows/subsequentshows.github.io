@@ -2,42 +2,39 @@
 
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="./images/letter-t-.png">
-
-  <title>Timeless tastes</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="../Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="./css/watch.css">
-  <link rel="stylesheet" href="./css/style.css">
-
-  <!-- Link Font Awesome -->
-  <link rel="stylesheet" href="./css/all.min.css">
-
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <!-- 1. Add latest jQuery and fancybox files -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timeless tastes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/letter-t-.png">
+  
+    <link rel="stylesheet" href="./css/watch.css">
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+  
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  
+  
+    <!-- 1. Add latest jQuery and fancybox files -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  
+  </head>
 
 <body>
   <div class="custom-width">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark logo-custom navbar-custom custom-width">
-      <div class="container-fluid d-block text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark logo-custom navbar-custom custom-width align-content-center" style="height: 50px;">
+      <div class="container-fluid d-block text-center ">
         <a class="navbar-brand navbar-brand-custom " href="index.html">TIMELESS  TASTES</a>
       </div>
     </nav>
@@ -46,10 +43,10 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <span class="navbar-toggler-icon"></span>
+              </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav mt-sm-3 mb-sm-3">
           <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">MAN WATCHES</a>
           <a class="nav-item nav-link" href="#">WOMEN WATCHES</a>
@@ -57,14 +54,58 @@
           <a class="nav-item nav-link" href="#">SERVICES</a>
         </div>
       </div>
+
+      <!--Shopping card-->
+      <button type="button" class="btn " data-toggle="modal" data-target="#cartModal">
+              <i class="fas fa-shopping-cart " style="color: black;"></i>
+            </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-full-width" role="document">
+          <div class="modal-content" style="min-height: 100vh;">
+            <div class="modal-header">
+              <h4 class="modal-title ml-auto" id="cartModalLabel">GIỎ HÀNG</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="container">
+                <h2>Bootstrap Counter Field</h2>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                      </span>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <!--END OF LOWER NAV-->
 
     <div class="container banner mw-100 pl-0 pr-0">
-      <img class="d-block w-100 img-fluid " src="./images/1.jfif" alt="banner">
+      <a href="#">
+        <img class="d-block mw-100 " src="./images/banner.png" alt="banner">
+      </a>
     </div>
   </div>
-  <!--END OF NAV-->
+  <!-- END OF NAV-BAR -->
 
   <div class="custom-width">
     <div class="container-xl container-fluid mt-5 mb-3 d-flex">
@@ -88,14 +129,14 @@
         <!--End of Sort by-->
 
         <div>
-          <button id="modalActivate" type="button" class="btn btn-custom pl-3 pr-3" data-toggle="modal" data-target="#exampleModalPreview">Filter</button>
+          <button id="filterModalActivate" type="button" class="btn btn-custom pl-3 pr-3" data-toggle="modal" data-target="#filterModalPreview">Filter</button>
         </div>
         <!-- Modal -->
-        <div class="modal fade right p-0" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal fade right p-0" id="filterModalPreview" tabindex="-1" role="dialog" aria-labelledby="filterModalPreviewLabel" aria-hidden="true">
           <div class="modal-dialog-full-width modal-dialog momodel modal-fluid h-100 p-0" role="document">
             <div class="modal-content-full-width modal-content h-auto">
               <div class=" modal-header-full-width modal-header d-flex justify-content-lg-center">
-                <h5 class="modal-title w-100 text-center" id="exampleModalPreviewLabel">FILTER</h5>
+                <h5 class="modal-title w-100 text-center" id="filterModalPreviewLabel">FILTER</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
                 </button>
@@ -111,7 +152,7 @@
                         <img src="./images/down-arrow.png">
                       </button>
                     </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -137,7 +178,7 @@
                       <img src="./images/down-arrow.png">
                   </button>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -162,7 +203,7 @@
                       <img src="./images/down-arrow.png">
                   </button>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -187,7 +228,7 @@
                       <img src="./images/down-arrow.png">
                   </button>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -212,7 +253,7 @@
                       <img src="./images/down-arrow.png">
                   </button>
                     </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -237,7 +278,7 @@
                       <img src="./images/down-arrow.png">
                   </button>
                     </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFilter">
                       <div class="card-body">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -270,6 +311,7 @@
       <!--END OF SORT-->
     </div>
   </div>
+  <!--END OF SORT-->
 
   <div class="custom-width">
     <div class="container-xl container-fluid">
@@ -439,7 +481,9 @@
 
   </footer>
 
-  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="../bootstrap-4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
@@ -449,12 +493,84 @@
   <script src="../bootstrap-4.0/assets/js/vendor/popper.min.js"></script>
   <!-- <script src="../Bootstrap/assets/js/vendor/popper.min.js"></script> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
+<!--Increase and decrease button-->
+<script>
+  //plugin bootstrap minus and plus
+  //http://jsfiddle.net/laelitenetwork/puJ6G/
+  
+  $('.btn-number').click(function(e){
+      e.preventDefault();
+      
+      fieldName = $(this).attr('data-field');
+      type      = $(this).attr('data-type');
+      var input = $("input[name='"+fieldName+"']");
+      var currentVal = parseInt(input.val());
+      if (!isNaN(currentVal)) {
+          if(type == 'minus') {
+              
+              if(currentVal > input.attr('min')) {
+                  input.val(currentVal - 1).change();
+              } 
+              if(parseInt(input.val()) == input.attr('min')) {
+                  $(this).attr('disabled', true);
+              }
 
+          } else if(type == 'plus') {
 
+              if(currentVal < input.attr('max')) {
+                  input.val(currentVal + 1).change();
+              }
+              if(parseInt(input.val()) == input.attr('max')) {
+                  $(this).attr('disabled', true);
+              }
+
+          }
+      } else {
+          input.val(0);
+      }
+  });
+  $('.input-number').focusin(function(){
+    $(this).data('oldValue', $(this).val());
+  });
+  $('.input-number').change(function() {
+      
+      minValue =  parseInt($(this).attr('min'));
+      maxValue =  parseInt($(this).attr('max'));
+      valueCurrent = parseInt($(this).val());
+      
+      name = $(this).attr('name');
+      if(valueCurrent >= minValue) {
+          $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+      } else {
+          alert('Sorry, the minimum value was reached');
+          $(this).val($(this).data('oldValue'));
+      }
+      if(valueCurrent <= maxValue) {
+          $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+      } else {
+          alert('Sorry, the maximum value was reached');
+          $(this).val($(this).data('oldValue'));
+      }
+      
+      
+  });
+  $(".input-number").keydown(function (e) {
+          // Allow: backspace, delete, tab, escape, enter and .
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+              // Allow: Ctrl+A
+              (e.keyCode == 65 && e.ctrlKey === true) || 
+              // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+                  // let it happen, don't do anything
+                  return;
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+              e.preventDefault();
+          }
+      });
+</script>
 
 
   
