@@ -1,0 +1,287 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    color: #e0c18e;
+    background-color:#f4f7fa;    ;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.logo-brand img {
+    height: 120px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+#header {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(231, 171, 171);
+}
+
+.logo-brand {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 05px;
+    background-color: rgb(231, 171, 171);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    height: 60px;
+    width: 80%;
+    height: 100%;
+}
+
+.menu ul li {
+    display: inline;
+    line-height: 30px;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* xoa gach ngang */
+    font-size: 18px;
+    padding: 0 20px 20px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-direction: column;
+}
+
+.body-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-post {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.main-container {
+    max-width: 1500px;
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+    height: 450px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.index-h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.divide-3 {
+    width: 33%;
+    height: 375px;
+}
+
+.image {
+    width: 90%;
+    height: 350px;
+    transition: all 0.25s linear;
+    backface-visibility: hidden;
+}
+
+.image-2 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 400px;
+    transition: all 0.25s linear;
+    backface-visibility: hidden;
+}
+
+.image:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 1px 2px 1px gray;
+}
+
+.location-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+div p a {
+    text-decoration: none;
+    color: black;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 40px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.detail-image {
+    width: 1000px;
+    height: 550px;
+}
+
+.text {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    /* width: 1200px; */
+    text-align: left;
+    margin-top: 20px;
+}
+
+.places {
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.back-button {
+    border-top: 1px solid #00000020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+}

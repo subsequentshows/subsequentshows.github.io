@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+}
+
+.nhan-vien {
+    width: 45%;
+    height: auto;
+    display: flex;
+    float: left;;
+}
+
+.san-pham {
+    width: 45%;
+    height: auto;
+    display: flex;
+    float: right;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.table-foot {
+    text-align: center;
+}
+
+.hover:hover {
+    background-color: gray;
+}

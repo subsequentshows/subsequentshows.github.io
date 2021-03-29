@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+
+<body>
+    <div class="container-fluid" id="header">
+        <header>
+            <div class="nav-bar">
+                <div class="nav-bar">
+                    <div class="logo-brand" onclick="window.location.href='index.html'">
+                        <a href="index.html">
+                            <img src="./images/Logo2.0.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Địa điểm</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </header>
+        </div>
+
+        <div class="body-part">
+            <div class="body-content main-container">
+                <div class="row main-post">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div></div>
+                            <img src="./images/da-lat-4.png" style="width:800px; height: 400px;">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div></div>
+                            <img src="./images/da-lat-6.jpg" style="width:800px; height: 400px;">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div></div>
+                            <img src="./images/da-lat-8.jpg" style="width:800px; height: 400px;">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <div class="location-text-2">
+                        <h1 class="text">GIỚI THIỆU VỀ ĐÀ LẠT</h1>
+                        <p>Đà Lạt hiện nay là thành phố loại 1 trực thuộc tỉnh ủy Lâm Đồng. Thành phố xinh đẹp và nổi tiếng này nằm ở trên Cao nguyên Lâm Viên của vùng Tây Nguyên nước Việt Nam. Đến với thành phố hoa đầu tiên các bạn cần phải trải nghiệm
+                            thử. Những khoảnh khắc săn mây làm ta lơ lẫn thẩn thờ như đang trên không trung. Cùng hòa quyện vào tinh hoa của đất trời, của thiên nhiên vừa ảo diệu mơ màng vừa bí ẩn. Đến nổi ta muốn bức phá hết tất cả như phép màu nhiệm
+                            đang thử thách chúng ta.</p>
+                        <p> Thành Phố Đà Lạt cách Biên Hòa tỉnh Đồng Nai khoảng 278km. Cách thủ đô Hà Nội 1.481km và Thành phố Hồ Chí Minh 293km, Nha Trang tỉnh Khánh Hòa 205km. Nếu đi đường đèo mới thì chỉ mất khoảng hơn 3 giờ để tới thành phố Nha Trang.</p>
+                        <p>
+                            Đà Lạt – Thiên đường sống ảo cực chất quanh năm muôn hoa đua nở khí hậu mát mẻ tràn ngập cả phố hoa. Thành phố Đà Lạt không chỉ là nơi bình yên nghỉ dưỡng tham quan nổi tiếng mà còn là những trải nghiệm đầy sắc màu tươi sáng và ngày càng đổi mới nhờ đó
+                            mà người người đã nghĩ ra được nhiều cảm hứng sáng tạo mới mẻ một số địa điểm cực chất cũng từ đó mà ra đời. Khách đến Đà Lạt vừa được thăm viếng, vừa thưởng thức những đặc sản. Bao gồm nhiều loại trái cây: hồng, mận, đào,
+                            bơ; nhiều món ăn dân tộc độc đáo và các hàng lưu niệm của riêng vùng cao nguyên này. </p>
+                        <h1>ĐIỂM DU LỊCH Ở HẠ LONG</h1>
+                        <p>
+                            <ul class="places">
+                                <li>Khu du lịch Thung Lũng Tình Yêu</li>
+                                <li>Khu du lịch Thung Lũng Vàng</li>
+                                <li>Đồi Mộng Mơ</li>
+                                <li>Hồ Xuân Hương</li>
+                                <li>Hồ Than Thở</li>
+                                <li>Hồ Tuyền Lâm</li>
+                                <li>Dinh 3 Bảo Đại</li>
+                                <li>Chùa Trúc Lâm</li>
+                                <li>Vườn Hoa Thành Phố</li>
+                                <li>Bảo Tàng Lâm Đồng</li>
+                                <li>Đồi chè cầu đất</li>
+                                <li>Fresh Garden Đà Lạt</li>
+                                <li>Hoa Mai Anh Đào</li>
+                                <li>Đồi Cỏ Hồng</li>
+                                <li>Horizon Coffee</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="back-button">
+
+                        <button onclick="goBack()">Go Back To Homepage</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+
+</html>
