@@ -1,0 +1,84 @@
+body {
+    font-family: 'Futura ', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+
+
+.modal-body-custom {
+    background-color: white !important;
+}
+
+.modal-dialog-full-width {
+    width: 40% !important;
+    margin: 0 0 0 auto !important;
+    max-width: none !important;
+}
+
+.modal-content-full-width {
+    height: auto !important;
+    min-height: 100% !important;
+    border-radius: 0 !important;
+    background-color: white !important
+}
+
+.modal-header-full-width {
+    border-bottom: 1px solid white !important;
+}
+
+.modal-footer-full-width {
+    border-top: 1px solid black !important;
+}
+
+.btn-custom-2 {
+    max-width: 130px;
+    width: 130px;
+}
+
+.accordion-container {
+    background-color: white !important;
+}
+
+.accordion-custom {
+    border-right: none !important;
+}
+
+
+.accordion-btn-custom {
+    font-size: 14px !important;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: start;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: black !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
+.modal-header-custom {
+    position: sticky;
+    top: 0;
+}
+
+.modal-footer-custom {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+@media (min-width: 250px) and (max-width: 767.98px) {
+    .modal-dialog-full-width {
+        width: 100% !important;
+    }
+}
