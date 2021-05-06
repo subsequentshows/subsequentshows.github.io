@@ -234,9 +234,6 @@ input:focus {
         font-size: 30px;
         text-align: center;
     }
-    .form-container {
-        width: 80%;
-    }
     .form-custom {
         width: 100%;
     }
