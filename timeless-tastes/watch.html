@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Timeless tastes</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/letter-t-.png">
+
+  <link rel="stylesheet" href="./css/watch.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+  <!-- 1. Add latest jQuery and fancybox files -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</head>
+
+<body>
+  <div class="custom-width">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark logo-custom navbar-custom custom-width align-content-center" style="height: 50px;">
+      <div class="container-fluid d-block text-center ">
+        <a class="navbar-brand navbar-brand-custom " href="index.html">TIMELESS  TASTES</a>
+      </div>
+    </nav>
+    <!--END OF UPPER NAV-->
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav mt-sm-3 mb-sm-3">
+          <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">MAN WATCHES</a>
+          <a class="nav-item nav-link" href="#">WOMEN WATCHES</a>
+          <a class="nav-item nav-link" href="#">COLLECTIONS</a>
+          <a class="nav-item nav-link" href="#">SERVICES</a>
+        </div>
+      </div>
+
+      <!--Shopping card-->
+      <button type="button" class="btn " data-toggle="modal" data-target="#cartModal">
+              <i class="fas fa-shopping-cart " style="color: black;"></i>
+            </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-full-width" role="document">
+          <div class="modal-content" style="min-height: 100vh;">
+            <div class="modal-header">
+              <h5 class="modal-title ml-auto" id="cartModalLabel" style="padding-left: 8px;">GIỎ HÀNG</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="container">
+                <h2>Bootstrap Counter Field</h2>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                      </span>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--END OF LOWER NAV-->
+
+    <div class="container banner mw-100 pl-0 pr-0">
+      <a href="#">
+        <img class="d-block mw-100 " src="./images/banner.png" alt="banner">
+      </a>
+    </div>
+  </div>
+  <!-- END OF NAV-BAR -->
+
+  <div class="custom-width">
+    <div class="container-xl container-fluid mt-5 mb-3 d-flex">
+      <div class="row ">
+        <div class="input-group ml-3">
+          <div class="input-group-prepend mr-2">
+            <button class="btn btn-custom mr-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by
+              <i class="fas fa-chevron-down pl-3 fa-custom"></i>
+    	      </button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Newest</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Best selling</a>
+              <a class="dropdown-item" href="#">Price(low to high)</a>
+              <a class="dropdown-item" href="#">Price(high to low)</a>
+            </div>
+          </div>
+        </div>
+
+        <!--End of Sort by-->
+
+        <div>
+          <button id="filterModalActivate" type="button" class="btn btn-custom pl-3 pr-3" data-toggle="modal" data-target="#filterModalPreview">Filter</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade right p-0" id="filterModalPreview" tabindex="-1" role="dialog" aria-labelledby="filterModalPreviewLabel" aria-hidden="true">
+          <div class="modal-dialog-full-width modal-dialog momodel modal-fluid h-100 p-0" role="document">
+            <div class="modal-content-full-width modal-content h-auto">
+              <div class=" modal-header-full-width modal-header modal-header-custom d-flex justify-content-lg-center">
+                <h5 class="modal-title w-100 text-center" id="filterModalPreviewLabel">FILTER</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body modal-body-custom pl-0 pt-0 pr-0">
+                <div class="accordion accordion-container" id="accordionExample">
+
+                  <div class="card  accordion-custom">
+                    <div class="card-header" id="headingOne">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Type
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios1" value="optionType1" id="flexCheckType">
+                          <label class="form-check-label" for="flexCheckType">Watch</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card accordion-custom">
+                    <div class="card-header" id="headingOne">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Size
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios2" value="optionSize1" id="flexCheckSize1">
+                          <label class="form-check-label" for="flexCheckSize1">28</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios2" value="optionSize2" id="flexCheckSize2">
+                          <label class="form-check-label" for="flexCheckSize2">32</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios2" value="optionSize3" id="flexCheckSize3">
+                          <label class="form-check-label" for="flexCheckSize3">36</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios2" value="optionSize4" id="flexCheckSize4">
+                          <label class="form-check-label" for="flexCheckSize4">40</label>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card  accordion-custom">
+                    <div class="card-header" id="headingThree">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                        Colour
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios3" value="optionColour1" id="flexCheckColour1">
+                          <label class="form-check-label" for="flexCheckColour1">Black</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios3" value="optionColour2" id="flexCheckColour2">
+                          <label class="form-check-label" for="flexCheckColour2">Gold</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios3" value="optionColour3" id="flexCheckColour3">
+                          <label class="form-check-label" for="flexCheckColour3">Rose Gold</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios3" value="optionColour4" id="flexCheckColour4">
+                          <label class="form-check-label" for="flexCheckColour4">Silver</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card  accordion-custom">
+                    <div class="card-header" id="headingFour">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Material
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios7" value="optionMaterial1" id="flexCheckMaterial1">
+                          <label class="form-check-label" for="flexCheckMaterial1">Leather strap</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios7" value="optionMaterial2" id="flexCheckMaterial2">
+                          <label class="form-check-label" for="flexCheckMaterial2">Link strap</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios7" value="optionMaterial3" id="flexCheckMaterial3">
+                          <label class="form-check-label" for="flexCheckMaterial3">Mesh</label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card  accordion-custom">
+                    <div class="card-header" id="headingFive">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Strap Color
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+                    
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios8" value="optionStrapColor1" id="flexCheckStrapColor1">
+                          <label class="form-check-label" for="flexCheckStrapColor1">Black</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios8" value="optionStrapColor2" id="flexCheckStrapColor2">
+                          <label class="form-check-label" for="flexCheckStrapColor2">Gold</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios8" value="optionStrapColor3" id="flexCheckStrapColor3">
+                          <label class="form-check-label" for="flexCheckStrapColor3">Rose Gold</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios8" value="optionStrapColor4" id="flexCheckStrapColor4">
+                          <label class="form-check-label" for="flexCheckStrapColor4">Silver</label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card  accordion-custom">
+                    <div class="card-header" id="headingSix">
+                      <button class="btn btn-link collapsed accordion-btn-custom d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Collections
+                        <img src="./images/down-arrow.png">
+                      </button>
+                    </div>
+
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFilter">
+                      <div class="card-body pl-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios9" value="optionCollection1" id="flexCheckCollection1">
+                          <label class="form-check-label" for="flexCheckCollection1">Classic</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios9" value="optionCollection2" id="flexCheckCollection2">
+                          <label class="form-check-label" for="flexCheckCollection2">Iconic</label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer-full-width modal-footer d-flex  justify-content-around  modal-footer-custom">
+                <button type="button" class="btn btn-secondary btn-custom-2">Remove All
+
+                <button type="button" class="btn btn-custom btn-custom-2">Apply
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL-->
+      </div>
+      <!--END OF SORT-->
+    </div>
+  </div>
+  <!--END OF SORT-->
+
+  <div class="custom-width">
+    <div class="container-xl container-fluid">
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4 ">
+          <div class="card h-100 card-custom">
+            <a href="info.html">
+                <div class="img-overlay"></div>
+                <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                    <p class="card-text card-text-custom">$199.99</p>
+                </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+          <div class="card h-100 card-custom">
+              <a href="info.html">
+                  <div class="img-overlay"></div>
+                  <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                      <p class="card-text card-text-custom">$199.99</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+            <div class="card h-100 card-custom">
+                <a href="info.html">
+                    <div class="img-overlay"></div>
+                    <img src="./images/1.jfif" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom">CLASSIC CORNWALL</h5>
+                        <p class="card-text card-text-custom">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+  
+  
+  <!--End of products-->
+
+
+
+  
+  <!-- This is not footer -->
+  <footer class="container-xl container-fluid my-5 pt-5 border-top">
+    <div class="row">
+      <div class="col-6 col-md">
+        <h5>SHOP</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">All watches</a></li>
+          <li><a class="text-muted" href="#">Watch strap</a></li>
+          <li><a class="text-muted" href="#">Store</a></li>
+          <li><a class="text-muted" href="#">Collection</a></li>
+
+        </ul>
+      </div>
+
+
+
+      <div class="col-6 col-md ">
+        <h5>INFORMATION</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Return Policy</a></li>
+          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md pt-3 pt-lg-0 pt-md-0">
+        <h5>ABOUT</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Our story</a></li>
+          <li><a class="text-muted" href="#">Career</a></li>
+          <li><a class="text-muted" href="#">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md pt-3 pt-lg-0 pt-md-0">
+        <h5>CUSTOMER SERVICES</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">FAQ</a></li>
+          <li><a class="text-muted" href="#">Contact us</a></li>
+          <li><a class="text-muted" href="#">Size infomation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=""></div>
+    </div>
+
+  </footer>
+
+
+  <!--Jquerry -> popper -> bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="../bootstrap-4.0/dist/js/bootstrap.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../bootstrap-4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  
+
+  <!-- <script src="../Bootstrap/assets/js/vendor/popper.min.js"></script> -->
+
+  <!--Isotope sort-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+  
+<!--Increase and decrease button-->
+<script>
+  //plugin bootstrap minus and plus
+  //http://jsfiddle.net/laelitenetwork/puJ6G/
+  
+  // $('.btn-number').click(function(e){
+  //     e.preventDefault();
+      
+  //     fieldName = $(this).attr('data-field');
+  //     type      = $(this).attr('data-type');
+  //     var input = $("input[name='"+fieldName+"']");
+  //     var currentVal = parseInt(input.val());
+  //     if (!isNaN(currentVal)) {
+  //         if(type == 'minus') {
+              
+  //             if(currentVal > input.attr('min')) {
+  //                 input.val(currentVal - 1).change();
+  //             } 
+  //             if(parseInt(input.val()) == input.attr('min')) {
+  //                 $(this).attr('disabled', true);
+  //             }
+
+  //         } else if(type == 'plus') {
+
+  //             if(currentVal < input.attr('max')) {
+  //                 input.val(currentVal + 1).change();
+  //             }
+  //             if(parseInt(input.val()) == input.attr('max')) {
+  //                 $(this).attr('disabled', true);
+  //             }
+
+  //         }
+  //     } else {
+  //         input.val(0);
+  //     }
+  // });
+  // $('.input-number').focusin(function(){
+  //   $(this).data('oldValue', $(this).val());
+  // });
+  // $('.input-number').change(function() {
+      
+  //     minValue =  parseInt($(this).attr('min'));
+  //     maxValue =  parseInt($(this).attr('max'));
+  //     valueCurrent = parseInt($(this).val());
+      
+  //     name = $(this).attr('name');
+  //     if(valueCurrent >= minValue) {
+  //         $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+  //     } else {
+  //         alert('Sorry, the minimum value was reached');
+  //         $(this).val($(this).data('oldValue'));
+  //     }
+  //     if(valueCurrent <= maxValue) {
+  //         $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+  //     } else {
+  //         alert('Sorry, the maximum value was reached');
+  //         $(this).val($(this).data('oldValue'));
+  //     }
+      
+      
+  // });
+  // $(".input-number").keydown(function (e) {
+  //         Allow: backspace, delete, tab, escape, enter and .
+  //         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+  //             Allow: Ctrl+A
+  //             (e.keyCode == 65 && e.ctrlKey === true) || 
+  //             Allow: home, end, left, right
+  //             (e.keyCode >= 35 && e.keyCode <= 39)) {
+  //                 let it happen, don't do anything
+  //                 return;
+  //         }
+  //         Ensure that it is a number and stop the keypress
+  //         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+  //             e.preventDefault();
+  //         }
+  //     });
+
+  function increment() {
+      document.getElementById('demoInput').stepUp();
+   }
+
+   function decrement() {
+      document.getElementById('demoInput').stepDown();
+   }
+
+   $('.grid').isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 100
+    }
+  });
+
+
+  // init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+    symbol: '.symbol',
+    number: '.number parseInt',
+    category: '[data-category]',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') );
+    }
+  }
+});
+
+
+  //Isolope
+  // bind sort button click
+  $('.sort-by-button-group').on( 'click', 'button', function() {
+    var sortValue = $(this).attr('data-sort-value');
+    $grid.isotope({ sortBy: sortValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+
+
+</script>
+
+
+  
+</body>
+
+</html>
