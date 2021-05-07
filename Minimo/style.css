@@ -1,0 +1,315 @@
+.wrapper {
+    max-width: 1090px;
+    margin: 70px auto;
+}
+
+.wrapper-2 {
+    max-width: 930px;
+    margin: 70px auto;
+}
+
+.wrapper-3 {
+    max-width: 930px;
+    margin: auto;
+}
+
+.link-stuff:hover {
+    text-decoration: none;
+}
+
+.default-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.default-font-2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+}
+
+
+
+.spacing {
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30pt !important;
+    letter-spacing: 4.2px;
+    color: #000000;
+}
+
+.blog-info {
+    font-size: 11pt;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.blog-title {
+    font-size: 23pt;
+    color: #626262;
+}
+
+.blog-text {
+    font-size: 18pt;
+    color: #626262
+}
+
+.menu-custom {
+    font-size: 14pt;
+    color: #626262;
+}
+
+.banner-custom {
+    margin-top: 77px;
+}
+
+.main-container {
+    margin-top: 100px;
+    max-width: 900px;
+}
+
+
+.card-custom {
+    width: 100%;
+    height: auto;
+}
+
+.sign-up {
+    height: 290px;
+    background-color: #f0f0f0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email-input {
+    max-width: 50%;
+    margin: auto;
+}
+
+.signup-title {
+    font-size: 30pt;
+    text-align: center;
+    color: #333333;
+}
+
+.form-container {
+    border-bottom: 1px solid black;
+}
+
+.form-custom {
+    border: none;
+    background: transparent;
+    color: #626262;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.form-send-btn {
+    outline: none;
+    border: none;
+}
+
+.form-send-btn:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.loadmore-btn {
+    height: 60px;
+}
+
+.loadmore-custom {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    height: 100px;
+}
+
+.blog-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* margin-bottom: 65px; */
+}
+
+.blog-quote {
+    font-size: 14pt;
+    font-style: italic;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.share-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13pt;
+}
+
+.share {
+    height: 15px;
+    padding-left: 10px;
+}
+
+.same-blog {
+    background-color: #f5f5f5;
+
+}
+
+.same-blog-inner {
+    font-size: 12pt;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.same-blog-thumbnail {
+    height: 100%;
+    width: 92%;
+    padding-top: 20px;
+    max-width: 900px;
+    margin: auto;
+    /* overflow: hidden; */
+    font-family: 'Playfair Display', serif;
+    font-size: 15pt;
+    color: #626262;
+}
+
+.same-blog-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.same-blog-img {
+    width: 100%;
+}
+
+.card-custom-2 {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* .comment {
+    height: 640px;
+    max-width: 900px;
+    margin: auto;
+} */
+
+.comment-avatar {
+    width: 15%;
+    max-width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.comment-inner {
+    width: 85%;
+    height: 100px;
+}
+
+.form-custom-2 {
+    border: none !important;
+}
+
+.form-custom-3 {
+    height: 70px !important;
+    padding-left: 30px !important;
+}
+
+.playfair-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #626262;
+}
+
+.ubuntu-light {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .signup-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .form-custom {
+        width: 100%;
+    }
+   
+    .footer-small {
+        width: 90%;
+        margin: auto;
+    }
+
+    .comment {
+        padding-top: 20px;
+        height: 730px;
+    }
+
+    .comment-avatar {
+        width: 20% !important;
+    }
+    .comment-inner {
+        width: 80% !important;
+    }
+
+    /* .blog-container {
+        height: 400px;
+    } */
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .same-blog {
+        height: auto;
+    }
+    .footer-small {
+        width: 95%;
+    }
+    .mb-sm-5 {
+        margin-bottom: 5rem !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .email-input {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .same-blog {
+        /* height: 1000px; */
+    }
+    .card-custom-2 {
+        width: 100%;
+        /* height: 400px; */
+    }
+    .same-blog-image {
+        width: 100%;
+        height: auto;
+    }
+    .card-body-custom {
+        height: 100px !important;
+    }
+    .card-mt {
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px)  {
+    .sm-padding {
+        padding-top: 20px;
+    }
+
+}
