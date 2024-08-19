@@ -1,0 +1,433 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+
+  .change-page-btn {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 48px;
+    border: 2px solid #f2af29;
+    transition: all 0.3s ease;
+  }
+
+  .change-page-btn::after {
+    content: "\279C";
+    font-size: 18px;
+    color: #f2af29;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 14px;
+    left: 13px;
+  }
+
+  .change-page-btn:hover {
+    border-color: #14519f;
+  }
+
+  .change-page-btn:hover::after {
+    color: #14519f;
+  }
+
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+.body-wrapper {
+  background-color: rgb(86, 18, 150);
+
+  .container {
+    width: 100%;
+    padding: 0 30px;
+
+    .inner-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .goal-section,
+      .team-section,
+      .scopes-section,
+      .primary-section,
+      .timeline-section {
+        background-color: #fff;
+        padding: 15px;
+
+        .title {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 1.6;
+        }
+
+        .headliner {
+          border-top: 1px solid #333;
+        }
+      }
+
+      .goal-section,
+      .timeline-section {
+        .content-item {
+          border-bottom: 1px solid #333;
+        }
+      }
+
+      .goal-section,
+      .team-section,
+      .primary-section,
+      .timeline-section {
+        .content-item {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 15px 0;
+
+          .image {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .contents {
+          width: calc(100% - 45px);
+          padding-left: 15px;
+
+          .content-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+
+          .content-info {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .left-section {
+        width: calc(75% - 15px);
+        margin-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .goal-section,
+        .scopes-section {
+          width: calc(70% - 15px);
+          margin-right: 15px;
+        }
+
+        .team-section,
+        .primary-section {
+          width: 30%;
+        }
+
+        .goal-section,
+        .team-section {
+          margin-bottom: 15px;
+        }
+
+        .scopes-section {
+          .content-wrapper {
+            border-top: 1px solid #333;
+
+            .content-item {
+              margin-top: 15px;
+              width: 50%;
+
+              &:first-child {
+                padding-right: 7.5px;
+              }
+
+              &:last-child {
+                padding-left: 7.5px;
+              }
+
+              .content-title {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.6;
+                padding-bottom: 5px;
+              }
+            }
+          }
+        }
+
+        .team-section {
+          .content-item {
+            width: 100%;
+          }
+        }
+      }
+
+      .right-section {
+        width: 25%;
+
+        .timeline-section {
+          height: 100%;
+          padding-bottom: 0;
+          margin-bottom: 0;
+
+          .content-info {
+            -webkit-line-clamp: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 520px) {
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .body-wrapper {
+    .container {
+      padding: 0 15px;
+
+      .inner-content {
+        padding: 15px 0;
+      }
+
+      .content-wrapper {
+        .left-section,
+        .right-section {
+          width: 100%;
+          margin: 0;
+        }
+
+        .left-section {
+          .goal-section,
+          .scopes-section,
+          .team-section,
+          .primary-section {
+            width: 100%;
+            margin-right: 0;
+          }
+
+          .scopes-section {
+            .content-wrapper {
+              .content-item {
+                width: 100%;
+                &:first-child {
+                  padding: 0;
+                }
+
+                &:last-child {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .right-section {
+          .contents {
+            width: 100%;
+            padding-left: 0;
+            margin-top: 10px;
+          }
+        }
+
+        .goal-section,
+        .team-section,
+        .primary-section {
+          .image {
+            margin: 0 auto 15px;
+          }
+          .contents {
+            width: 100%;
+            padding-left: 0;
+          }
+        }
+
+        .goal-section {
+          order: 1;
+        }
+
+        .team-section {
+          order: 3;
+        }
+
+        .primary-section {
+          order: 4;
+          margin-bottom: 15px;
+        }
+
+        .scopes-section {
+          order: 2;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Container section */
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+}
